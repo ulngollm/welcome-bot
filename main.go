@@ -38,7 +38,7 @@ func main() {
 }
 
 func joinHandler(c tele.Context) error {
-	desc, err := settings.GetBotDescription(*c.Bot())
+	desc, err := settings.GetBotDescription(*bot)
 	if err != nil {
 		return fmt.Errorf("getDescription: %w", err)
 	}
